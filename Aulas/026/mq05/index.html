@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
+</head>
+<body onresize="changedSize()">
+    <header>
+        <h1>Meu Site</h1>
+        <button id="btnMenu" onclick="clicouMenu()" >«»</button>
+        <menu id="item">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media query</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid deserunt inventore molestiae quo nulla iste dicta provident, quisquam aspernatur, laudantium suscipit laboriosam asperiores quam optio debitis quod quibusdam quis?
+            Tempora, placeat at! Nostrum maxime quis molestias doloribus fugit deleniti facilis illo animi dicta aspernatur nobis obcaecati quia blanditiis, ipsa culpa exercitationem in maiores perspiciatis magnam tempora! Ab, tempora saepe.
+            Voluptates dolor enim minus illum molestiae ut praesentium alias eveniet numquam reiciendis sapiente voluptatum ex impedit consequatur quia nihil ad repellendus, perferendis pariatur dicta nostrum. Dignissimos molestias id incidunt eaque.
+            Ducimus est consequuntur cumque facere expedita enim aliquam provident! Dignissimos eius sit possimus quos incidunt assumenda aliquam blanditiis enim maxime voluptatibus odit ratione vel quae ea harum, sint deleniti! Expedita.
+            Quidem animi velit, nihil odio laborum et. Earum voluptatum, aspernatur dignissimos asperiores dolorum reprehenderit tempore eius provident minima laudantium accusamus at laborum assumenda similique quas velit natus ducimus doloribus culpa.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid deserunt inventore molestiae quo nulla iste dicta provident, quisquam aspernatur, laudantium suscipit laboriosam asperiores quam optio debitis quod quibusdam quis?
+            Tempora, placeat at! Nostrum maxime quis molestias doloribus fugit deleniti facilis illo animi dicta aspernatur nobis obcaecati quia blanditiis, ipsa culpa exercitationem in maiores perspiciatis magnam tempora! Ab, tempora saepe.
+            Voluptates dolor enim minus illum molestiae ut praesentium alias eveniet numquam reiciendis sapiente voluptatum ex impedit consequatur quia nihil ad repellendus, perferendis pariatur dicta nostrum. Dignissimos molestias id incidunt eaque.
+            Ducimus est consequuntur cumque facere expedita enim aliquam provident! Dignissimos eius sit possimus quos incidunt assumenda aliquam blanditiis enim maxime voluptatibus odit ratione vel quae ea harum, sint deleniti! Expedita.
+            Quidem animi velit, nihil odio laborum et. Earum voluptatum, aspernatur dignissimos asperiores dolorum reprehenderit tempore eius provident minima laudantium accusamus at laborum assumenda similique quas velit natus ducimus doloribus culpa.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid deserunt inventore molestiae quo nulla iste dicta provident, quisquam aspernatur, laudantium suscipit laboriosam asperiores quam optio debitis quod quibusdam quis?
+            Tempora, placeat at! Nostrum maxime quis molestias doloribus fugit deleniti facilis illo animi dicta aspernatur nobis obcaecati quia blanditiis, ipsa culpa exercitationem in maiores perspiciatis magnam tempora! Ab, tempora saepe.
+            Voluptates dolor enim minus illum molestiae ut praesentium alias eveniet numquam reiciendis sapiente voluptatum ex impedit consequatur quia nihil ad repellendus, perferendis pariatur dicta nostrum. Dignissimos molestias id incidunt eaque.
+            Ducimus est consequuntur cumque facere expedita enim aliquam provident! Dignissimos eius sit possimus quos incidunt assumenda aliquam blanditiis enim maxime voluptatibus odit ratione vel quae ea harum, sint deleniti! Expedita.
+            Quidem animi velit, nihil odio laborum et. Earum voluptatum, aspernatur dignissimos asperiores dolorum reprehenderit tempore eius provident minima laudantium accusamus at laborum assumenda similique quas velit natus ducimus doloribus culpa.</p>
+
+        </article>
+    </main>
+    <script>
+        function changedSize(){
+            if (window.innerWidth <= 768) {
+                item.style.display = 'none'
+            }
+            else{
+                item.style.display = 'block'
+            }
+        }
+
+        function clicouMenu() {
+            if (item.style.display == 'block') {
+                item.style.display = 'none'
+            }
+            else{
+                item.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
